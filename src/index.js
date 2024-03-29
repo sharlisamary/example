@@ -3,27 +3,28 @@ import ReactDOM from 'react-dom/client';
 import './index.css';
 import reportWebVitals from './reportWebVitals';
 import { BrowserRouter as Router, Routes, Route, Link } from 'react-router-dom';
-import Listout from './Listout';
-import Form from './Form';
-import EditUser from './EditUser';
+// import Registerform from './Registerform';
+// import Loginform from './Loginform';
+// import Homescreen from './Homescreen';
+import { Login } from './modules';
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <Router>
     <Routes>
-      <Route path='/' element={<Home />} />
-      <Route path='/Form' element={< Form />} />
-      <Route path='/listout' element={<Listout />} />
-      <Route path='/edituser' element={<EditUser />} />
+      <Route path='/' element={<Login />} />
+      {/* <Route path='/registerform' element={< Registerform />} />
+      <Route path='/loginform' element={<Loginform />} />
+      <Route path='/homescreen' element={<Homescreen />} /> */}
     </Routes>
   </Router>
 );
-function Home() {
-  return (
-    < div >
-      <h1 style={{ textAlign: "center" }}> <br></br>FORM <br></br></h1>
-      <Link to={'/form'} style={{ textAlign: "center", fontWeight: "bold", fontSize: "larger" }}>Gym Membership Form</Link>
-    </div >
-  )
-}
+// function Home() {
+//   return (
+//     < div >
+//       <h1 style={{ textAlign: "center" }}> <br></br>FORM <br></br></h1>
+//       <Link to={'/registerform'} style={{ textAlign: "center", fontWeight: "bold", fontSize: "larger" }}>Gym Membership Form</Link>
+//     </div >
+//   )
+// }
 
 reportWebVitals();

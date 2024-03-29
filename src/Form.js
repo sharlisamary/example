@@ -63,7 +63,7 @@ function Form() {
             alert("Form is valid Successfully")
             setSubmitted(true);
         } else {
-            console.log(errors);
+            // console.log(errors);
             alert("Form is not valid")
         }
 
